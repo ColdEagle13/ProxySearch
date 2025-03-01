@@ -2,30 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="#">
-    <title>ProxySearch | Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="./Site/images/logo.png">
+    <link rel="stylesheet" href="index.css">
+    <title>coldeagle13 | Home</title>
+    <!-- Tailwind CSS CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
-    <div class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
-        <h1 class="text-3xl font-bold text-center mb-6">ProxySearch</h1>
-        <form>
-            <div class="mb-4">
-                <input type="text" class="form-input w-full rounded-md border-gray-300 shadow-sm" placeholder="Type or search a URL">
-            </div>
-            <div class="flex justify-center">
-                <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Go</button>
-            </div>
-        </form>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div class="bar">
+        <div class="settings" id="settings">
+            <div class="settingsstuff title_main">Settings</div>
+            <center>
+                <input class="setTitle" placeholder="Title" onkeyup="titleSet(this.value)">
+                <input class="setIco" placeholder="Icon" onkeyup="iconSet(this.value)">
+                <div class="resetButton" onclick="reset()">Reset</div>
+            </center>
+        </div>
     </div>
-
+    <div class="title text-4xl mb-8">ProxySearch</div>
+    <center>
+        <form>
+            <div class="relative w-full max-w-lg">
+                <input type="text" placeholder="Type or search a URL" class="w-full px-4 py-2 text-gray-900 bg-gray-200 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            </div>
+            <div class="links"></div>
+        </form>
+    </center>
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="index.js"></script>
     <script src="updates.js"></script>
     <script src="site.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 </html>
