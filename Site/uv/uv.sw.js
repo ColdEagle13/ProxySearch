@@ -14,7 +14,7 @@ class UVServiceWorker extends EventEmitter {
                 'content-security-policy',
                 'content-security-policy-report-only',
                 'expect-ct',
-                'feature-policy',
+                'feature-policy', 
                 'origin-isolation',
                 'strict-transport-security',
                 'upgrade-insecure-requests',

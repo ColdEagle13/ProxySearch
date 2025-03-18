@@ -8,7 +8,7 @@ function settings() {
     } else {
         settings.style.display = "initial"
     }
-}
+} 
 
 function updates() {
     var settings = document.getElementById("updates")

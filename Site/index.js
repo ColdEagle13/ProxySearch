@@ -22,4 +22,4 @@ function isUrl(val = ''){
 
 function quickLink(url1) {
     window.location.href = __uv$config.prefix + url1;
-}
+} 

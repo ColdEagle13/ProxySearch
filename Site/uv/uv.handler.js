@@ -15,7 +15,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
     const __uv = new Ultraviolet({
         ...config,
         window,
-    });
+    }); 
 
     if (typeof config.construct === 'function') {
         config.construct(__uv, worker ? 'worker' : 'window');
